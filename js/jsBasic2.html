@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1 id="j01">Hello</h1>
+    <h1 id="j02">Hello</h1>
+    <h1 id="j03">Hello</h1>
+    <h1 id="j04">Hello</h1>
+    <h1 id="j05">Hello</h1>
+    <button onclick="clk()" onmouseover="mhvr()" onmouseout="mout()" onkeydown="kdown()" onkeyup="kup()">button</button>
+    <script>
+        function clk(){
+            document.getElementById("j01").innerHTML = "button clicked";
+        }
+        function mhvr(){
+            document.getElementById("j02").innerHTML = "mouse on button.";
+        }
+        function mout(){
+            document.getElementById("j04").innerHTML = "mouse out from button.";
+        }
+        function kdown(){
+            document.getElementById("j05").innerHTML = "key down";
+        }
+        function kup(){
+            document.getElementById("j03").innerHTML = "key up.";
+        }
+    </script>
+</body>
+</html>

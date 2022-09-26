@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Js</title>
+</head>
+<body>
+    <h1 id="h1">hello</h1>
+    <h2 id="h2">ajax</h2>
+    <button type="button" onclick="ajaxData()">get</button>
+
+    <script>
+        function ajaxData(){
+            const ad = new XMLHttpRequest();
+            ad.onloadend() = function() {
+                document.getElementById("h2").innerHTML = this.ajaxData;
+            }
+            ad.open("GET","ajax1.txt");
+            ad.send();
+        };
+    </script>
+</body>
+</html>

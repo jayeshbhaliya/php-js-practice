@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Clock</title>
+</head>
+<body onload="curruntTime()">
+    <h1>Time: </h1> <br>
+    <h2 id="time"></h2>
+
+    <script>
+        let x = position.coords.latitude;
+        document.write(x);
+        function curruntTime(){
+            let t = new Date();
+            let H = t.getHours();
+            let M = t.getMinutes();
+            let S = t.getSeconds();
+
+            document.getElementById("time").innerHTML = H + " : " + M + " : " + S;
+            setTimeout(curruntTime, 1000);
+        
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js DOM</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">Hello</p>
+        <p id="p2"></p>
+    </div>
+    <p class="p4" id="p3"></p>
+    <p id="p5">p5</p>
+
+    <script>
+        const myCollection = document.getElementsByTagName("p");
+        document.write(myCollection[0].innerHTML);
+        document.getElementById("p3").innerHTML = myCollection[0].innerHTML;
+        myCollection[1].innerHTML = myCollection.length;
+
+        myCollection[3].innerHTML = "screensize:  " +" /availHeight " +  screen.availHeight + " / height " + screen.height +" / " +  screen.availWidth +" / " +  screen.width +" / " +  screen.colorDepth +" / " +  screen.pixelDepth  ;
+    </script>
+</body>
+</html>

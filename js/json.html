@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Js</title>
+</head>
+<body>
+    <p id="p1"></p> <br>
+    <p id="p2"></p> <br>
+    <p id="p3"></p>
+
+    <script>
+        const obj1 = '{ "name":"ravi", "age":22, "city":["bhavnagar","ahmedabad"]}';
+        const obj2 = JSON.parse(obj1);
+        const str = JSON.stringify(obj2);
+        const myArray = obj2.city;
+
+        document.getElementById("p1").innerHTML = " his name is " + obj2["name"] + " and age is " + obj2.age;
+        document.getElementById("p2").innerHTML = myArray;
+        let txt = "";
+        for (const x in myArray) {
+            txt += myArray[x] + " , ";
+        }
+        document.getElementById("p3").innerHTML = txt;
+    </script>
+</body>
+</html>

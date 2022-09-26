@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        let str1 ="This is str1";
+        let text = "";
+        var age = 26;
+        let x = 0;
+
+        let isOld = (age < 45)?"young":"old";
+        console.log(isOld);
+        const arr1 = [1,2,3,4,5];
+        
+        var car = { name:"tata", model:"nexus",price:"16L"};
+        for( const x of str1){
+            text += x+"/";
+        }
+        const person = {
+            name : "jayesh",
+            lastName : "bhaliya",
+            age : "22",
+        };
+        document.getElementById("p2").innerHTML = person.name + " " + person["lastName"] + " " + "age: "+ person.age;
+        document.getElementById("p1").innerHTML = text;
+    </script>
+</body>
+</html>

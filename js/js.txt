@@ -1,0 +1,27 @@
+"document.getElementById('demo').style.display='none'"  //for change style
+document.getElementById("demo").innerHTML = 5 + 6; //for change inner html
+
+Always declare JavaScript variables with var,let, orconst.
+
+event.............................................
+onchange 	An HTML element has been changed
+onclick 	The user clicks an HTML element
+onmouseover 	The user moves the mouse over an HTML element
+onmouseout 	The user moves the mouse away from an HTML element
+onkeydown 	The user pushes a keyboard key
+onload 	The browser has finished loading the page
+...........................................................
+x.length property returns the length of a string:
+replace()
+slice()
+substring()
+
+
+array fn....................................
+join("**")         -convert to string with ** 
+toString()     -convert to string
+pop()          -removes the last element from an array: 
+push()         - adds a new element to an array (at the end):
+shift()        - removes the first array element
+unshift()      -method adds a new element to an array (at the beginning)
+concat()       -method creates a new array by merging

@@ -1,0 +1,5 @@
+this text from fopen fileHandling<br>
+if file not available it can create itself!!<br>
+ 
+this text from fopen fileHandling a<br>
+if we use a than that not earese old data!!!<br>
